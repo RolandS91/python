@@ -60,7 +60,7 @@ for t in range(1,len(jtemp)):
 
 jtemp.pop(5)            # Kustutab viienda
 jtemp.insert(5,33)      # Lisab viienda
-# jtemp.sort() sorteerib
+# jtemp.sort()          # Sorteerib
 
 print()
 print(f"Maksimum temperatuur on: {maks} kraadi")
