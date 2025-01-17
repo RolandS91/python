@@ -40,3 +40,31 @@ jtemp = ["jaanuar",-16,-12,-15,-20,0,-1,-20,-2,-20,-14,-18,-8,2,-1,-14,-7,-15,-1
 
 print(f"Mõõdetav kuu: {jtemp[0]}")
 print(f"Viimane mõõtmise tulemus: {jtemp[-1]} kraadi")
+
+maks = -100
+mini = 100
+summa = 0
+kokku = 0
+kordused = 0
+
+for t in range(1,len(jtemp)):
+    print(jtemp[t], end=" ")    # Prindi kõik temperatuurid
+    if jtemp[t]>maks:           # max temp kontroll
+        maks = jtemp[t]         
+    if jtemp[t]<mini:           # min temp kontroll
+        mini = jtemp[t]
+    summa+=jtemp[t]
+    kokku+=1
+    if jtemp[t]== -20:
+        kordused+=1
+
+jtemp.pop(5)            # Kustutab viienda
+jtemp.insert(5,33)      # Lisab viienda
+# jtemp.sort() sorteerib
+
+print()
+print(f"Maksimum temperatuur on: {maks} kraadi")
+print(f"Miinimum temperatuur on: {mini} kraadi")
+print(f"Keskmine temperatuur on: {summa/kokku:0.0f}")
+print(f"-20 esineb: {kordused} korda")
+print(jtemp)
