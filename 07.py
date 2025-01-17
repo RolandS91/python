@@ -23,4 +23,4 @@ for i in range(10):      # loome listi
     print(f"{i+1}. {nimi[i]}")
     
 valik = int(input("Vali lugu (1-10): "))   # küsime, mis lugu soovib ja kuvame mängitava loo
-print(f"Mängin: {nimi[valik-1]}")
+print(f"Mängin: {nimi[valik-1]}") #blabla
