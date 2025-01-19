@@ -12,6 +12,7 @@ Joone paksus 6
 Kiirus 0
 """
 
+# akna seaded
 aken = turtle.Screen()
 aken.setup(width=600, height=400)
 aken.bgcolor("lightblue")
