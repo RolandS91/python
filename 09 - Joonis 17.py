@@ -24,6 +24,7 @@ for i in range(1, 7):
         turtle.forward(suurus)
         turtle.left(90)
 
+
     # Katus
     turtle.penup()
     turtle.goto(turtle.xcor(), turtle.ycor() + suurus)
@@ -46,6 +47,7 @@ for i in range(1, 7):
         turtle.left(90)
         turtle.forward(suurus // 2)
         turtle.left(90)
+
 
     # Järgmine maja
     turtle.pencolor("black")
