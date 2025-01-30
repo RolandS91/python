@@ -52,7 +52,7 @@ for i in range(1, 7):
     turtle.penup()
     turtle.goto(turtle.xcor() + suurus + 20, -100)
 
-# Finish up
+# Lõpetamine
 turtle.done()
 
 
