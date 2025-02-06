@@ -17,8 +17,23 @@ def pangakonto(algne_saldo, toiming, summa):
     return algne_saldo
 
 # Näidis kasutamine
+
+#saldo = 100
+#saldo = pangakonto(saldo, "deposiit", 50)
+#print(f"Saldo on: {saldo}")
+#saldo = pangakonto(saldo, "valjavote", 20)
+#print(f"Saldo on: {saldo}")
+
 saldo = 100
-saldo = pangakonto(saldo, "deposiit", 50)
-print(f"Saldo on: {saldo}")
-saldo = pangakonto(saldo, "valjavote", 20)
-print(f"Saldo on: {saldo}")
+tehing = input("Vali tehing: raha sisse või raha välja: ")
+
+if tehing == "raha sisse":
+    summa = int(input("Sisesta summa: "))
+    saldo = pangakonto(saldo, "deposiit", summa)
+    print(saldo)
+elif tehing == "raha välja":
+    summa = int(input("Sisesta summa: "))
+    saldo = pangakonto(saldo, "valjavote", summa)
+    print(saldo)
+else:
+    print("Viga: tundmatu tehing")
