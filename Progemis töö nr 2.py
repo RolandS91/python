@@ -24,6 +24,8 @@ def pangakonto(algne_saldo, toiming, summa):
 #saldo = pangakonto(saldo, "valjavote", 20)
 #print(f"Saldo on: {saldo}")
 
+
+# Enda fantaasia, et saaks tehingut valida ja summa sisestada
 saldo = 100
 tehing = input("Vali tehing: raha sisse või raha välja: ")
 
